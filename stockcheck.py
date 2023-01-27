@@ -19,7 +19,7 @@ async def on_message(message):
         await message.channel.send('Checking stock...')
         
         # Use the requests library to get the website's HTML
-        page = requests.get('https://www.bestbuy.com/site/playstation-5/pcmcat1483020809547.c?id=pcmcat1483020809547')
+        page = requests.get('https://www.bestbuy.com/site/sony-playstation-5-console/6523167.p?skuId=6523167')
         soup = BeautifulSoup(page.content, 'html.parser')
         
         # Use BeautifulSoup to search for the specific element that contains the stock status
